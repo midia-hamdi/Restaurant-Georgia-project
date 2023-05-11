@@ -1,8 +1,77 @@
 .header {
     width: 100%;
-    min-height: 100vh;
-    background-image: url(../../image/bg.jpeg);
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba($color-black, .8), rgba($color-black, .6)), url(../../image/bg.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .brand{
+        display: flex;
+        align-items: center;
+        @include centering(15%);
+    }
+
+    &-banner{
+        text-align: center;
+        @include centering(50%);
+    }
+}
+
+.about-us{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+
+    &-left{
+        width: 40%;
+        position: relative;
+        left: -100px;
+
+
+        img{
+            width: 100%;
+            opacity: .7;
+        }
+    }
+
+    &-right{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px;
+        box-sizing: border-box;
+
+
+        .stars{
+            margin: 30px 0;
+        }
+
+        .star{
+            font-size: 15px;
+            color: $color-primary;
+            margin-left: 10px;
+        }
+
+        .description{
+            font-family: $font-josefinSans;
+            font-size: 23px;
+            font-style: italic;
+            color: $color-secondary;
+            text-align: justify;
+
+            &::first-letter{
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+.gallery{
+    .cards-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        object-fit: cover;    }
 }

@@ -1,0 +1,78 @@
+.logo{
+    font-size: 70px;
+    color: $color-primary;
+    width: 100px;
+    height: 100px;
+    border: 3px solid $color-primary;
+    border-radius: 50%;
+    margin-right: 20px;
+    @include FlexLayout;
+}
+
+.main-name{
+    font-family: $font-nunito;
+    font-size: 50px;
+    color: $color-secondary;
+    @include textStyle;
+}
+
+.sub-name{
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    color: $color-secondary;
+    text-align: center;
+    @include textStyle;
+}
+
+.main-heading{
+    font-family: $font-dancingScript;
+    font-size: 70px;
+    font-weight: 300;
+    color: $color-primary;
+    margin-top: 80px;
+}
+
+.sub-heading{
+    font-family: $font-josefinSans;
+    font-size: 40px;
+    font-weight: 300;
+    color: $color-secondary;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.main-btn{
+    width: 170px;
+    height: 45px;
+    font-family: $font-josefinSans;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-primary;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    margin-bottom: 100px;
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+}
+
+.card{
+    width: 33.3333%;
+    height: 20vw;
+    position: relative;
+
+    &-overlay{
+        position: absolute;
+    }
+
+    &-img{
+        width: 100%;
+        height: 100%;
+    }
+}
