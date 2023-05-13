@@ -82,6 +82,7 @@
     @include FlexLayout;
     min-height: auto;
     flex-direction: column;
+    margin-bottom: 50px;
 
     &-header{
         display: flex;
@@ -92,5 +93,28 @@
         display: flex;
         width: 300px;
         justify-content: space-between;
+        margin-bottom: 50px;
+
+        &-items{
+            list-style: none;
+        }
+
+        &-link{
+            text-decoration: none;
+            font-size: 50px;
+            color: $color-secondary;
+            transition: color .7s;
+
+            &:hover{
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-copyright-paragraph{
+    font-family: $font-josefinSans;
+    font-size: 18px;
+    color: $color-secondary;
+    @include textStyle(capitalize);
     }
 }
