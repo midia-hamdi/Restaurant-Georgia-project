@@ -130,6 +130,10 @@
     display: flex;
     align-items: center;
 
+    @media(max-width: 900px){
+        height: 80vh;
+    }
+
     &-left{
         width: 40%;
         position: relative;
@@ -154,9 +158,17 @@
         padding: 0 100px;
         box-sizing: border-box;
 
+        @media(max-width: 1300px){
+           padding: 0 50px;
+        }
+
 
         .stars{
             margin: 30px 0;
+
+            @media(max-width: 1000px){
+                margin: 15px 0;
+            }
         }
 
         .star{
@@ -178,6 +190,10 @@
 
             @media(max-width: 1600px){
                 font-size: 18px;
+            }
+
+            @media(max-width: 1000px){
+                font-size: 20px;
             }
         }
     }
@@ -221,6 +237,10 @@
 
             &:hover{
                 color: $color-primary;
+            }
+
+            @media(max-width: 1000px){
+                font-size: 35px;
             }
         }
     }
