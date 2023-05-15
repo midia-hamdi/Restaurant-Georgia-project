@@ -143,6 +143,11 @@
             left: -50px;
         }
 
+        
+        @media(max-width: 800px){
+            display: none;
+        }
+
 
         img{
             width: 100%;
@@ -160,6 +165,11 @@
 
         @media(max-width: 1300px){
            padding: 0 50px;
+        }
+
+        
+        @media(max-width: 800px){
+        width: 100%;
         }
 
 
@@ -250,5 +260,11 @@
     font-size: 18px;
     color: $color-secondary;
     @include textStyle(capitalize);
+
+    @media(max-width: 800px){
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        }
     }
 }

@@ -6,6 +6,17 @@
     right: 5%;
     z-index: 300;
 
+    @media(max-width: 800px){
+        width: 35px;
+        height: 35px;
+    }
+
+    @media(max-width: 500px){
+        width: 25px;
+        height: 25px;
+    }
+
+
     .menu{
         @extend %sapcefull;
         display: flex;
@@ -20,6 +31,16 @@
             background-color: $color-primary;
             transform-origin: right;
             transition: all .5s .5s;
+
+            
+        @media(max-width: 800px){
+                height: 3px;
+            }
+
+        @media(max-width: 500px){
+            height: 2PX;
+            }
+        
         }
     }
 }
@@ -40,6 +61,14 @@
         width: 80px;
         height: 80px;
     }
+
+    @media(max-width: 500px){
+        font-size: 15px;
+        width: 50px;
+        height: 50px;
+        border-width: 2px;
+    }
+
 }
 
 .main-name{
@@ -50,6 +79,12 @@
 
     @media(max-width: 1000px){
         font-size: 40px;
+    }
+
+    @media(max-width: 500px){
+        font-size: 20px;
+        text-align: center;
+
     }
 }
 
@@ -112,6 +147,13 @@
         background-color: $color-primary;
         color: $color-dark;
     }
+
+    
+    @media(max-width: 800px){
+        width: 150px;
+        height: 35px;
+        font-size: 12px;
+    }
 }
 
 .card{
@@ -142,8 +184,13 @@
         @include textStyle(capitalize);
 
         @media(max-width: 900px){
-            font-size: 25pxpx;
-        }
+            font-size: 25px;
+            }
+
+        
+        @media(max-width: 650px){
+                font-size: 20px;
+            }
 
         }
 
@@ -154,7 +201,12 @@
             @include textStyle(capitalize);
 
             @media(max-width: 900px){
-                font-size: 20pxpx;
+                font-size: 20px;
+            }
+
+            
+            @media(max-width: 650px){
+                font-size: 15px;
             }
         }
 
@@ -177,6 +229,13 @@
                 font-size: 10px;
                 width: 90px;
                 height: 20px;
+            }
+
+            @media(max-width: 650px){
+                font-size: 8px;
+                width: 80px;
+                height: 20px;
+                margin-bottom: 5px;
             }
         }
     
