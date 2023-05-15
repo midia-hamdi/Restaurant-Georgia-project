@@ -84,7 +84,6 @@
     @media(max-width: 500px){
         font-size: 20px;
         text-align: center;
-
     }
 }
 
@@ -94,6 +93,12 @@
     color: $color-secondary;
     text-align: center;
     @include textStyle;
+
+    @media(max-width: 500px){
+        font-size: 10px;
+        text-align: center;
+    }
+
 }
 
 .main-heading{
@@ -107,6 +112,10 @@
         font-size: 50px;
     }
 
+    @media(max-width: 500px){
+        font-size: 40px;
+
+    }
 }
 
 .sub-heading{
@@ -125,6 +134,10 @@
 
     @media(max-width: 1000px){
         font-size: 40px;
+    }
+
+    @media(max-width: 500px){
+        font-size: 20px;
     }
 }
 
@@ -154,6 +167,13 @@
         height: 35px;
         font-size: 12px;
     }
+
+    @media(max-width: 500px){
+        width: 130px;
+        height: 30px;
+        font-size: 10px;
+    }
+
 }
 
 .card{

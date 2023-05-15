@@ -113,10 +113,18 @@
     background-position: center center;
     background-size: cover;
 
+    @media(max-width: 500px){
+        height: 40vh;
+    }
+
     .brand{
         display: flex;
         align-items: center;
         @include centering(15%);
+
+        @media(max-width: 500px){
+            @include centering(12%);
+        }
     }
 
     &-banner{
@@ -205,6 +213,10 @@
             @media(max-width: 1000px){
                 font-size: 20px;
             }
+
+            @media(max-width: 500px){
+                font-size: 12px;
+            }
         }
     }
 }
@@ -223,6 +235,10 @@
     min-height: auto;
     flex-direction: column;
     margin-bottom: 50px;
+
+    @media(max-width: 500px){
+        height: 40vh;
+    }
 
     &-header{
         display: flex;
