@@ -113,9 +113,6 @@
     background-position: center center;
     background-size: cover;
 
-    @media(max-width: 500px){
-        height: 40vh;
-    }
 
     .brand{
         display: flex;
@@ -237,8 +234,11 @@
     margin-bottom: 50px;
 
     @media(max-width: 500px){
-        height: 40vh;
+        padding: 40px 0;
     }
+
+
+
 
     &-header{
         display: flex;
